@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Design</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .chat-container {
+            position: relative;
+            width: 500px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+        }
+
+        .chat-bubble {
+            flex: 1;
+        }
+
+        .chat-bubble p {
+            margin: 0;
+            color: #333;
+            line-height: 1.5;
+        }
+
+        .placeholder {
+            background-color: #f0f0f0;
+            border-radius: 3px;
+            padding: 0 5px;
+        }
+
+        .avatars {
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        .avatars img {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            margin-right: 5px;
+        }
+
+        .go-button {
+            position: absolute;
+            top: 20px;
+            right: 0;
+            background-color: #ff4081;
+            color: white;
+            border: none;
+            border-radius: 0 15px 0 0;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            height: 100%;
+        }
+
+        .go-button:hover {
+            background-color: #e7376e;
+        }
+    </style>
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-bubble">
+            <p>Japan <span class="placeholder">____</span> is a country of <span class="placeholder">____</span> unique blend of traditions and innovations. It's a place where millennia-old culture meets the future.</p>
+            <div class="avatars">
+                <img src="avatar1.jpg" alt="Avatar 1">
+                <img src="avatar2.jpg" alt="Avatar 2">
+                <img src="avatar3.jpg" alt="Avatar 3">
+            </div>
+        </div>
+        <button class="go-button">Go</button>
+    </div>
+</body>
+</html>
